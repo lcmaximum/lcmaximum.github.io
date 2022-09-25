@@ -17,6 +17,6 @@ body {
 }
 
 #day-mode {
-  background-image: url(day-man.png);
+  background-image: url("/docs/assets/images/day-man.png");
   background-size: cover;
 }
