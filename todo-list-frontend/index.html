@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="script.js"></script>
+    <link href="style.css" rel="stylesheet"></link>
+    <title>To-Do List</title>
+  </head>
+  
+  <body id='body'>
+    <h1>To-Do List</h1>
+    <button onclick="darkMode()">dark mode</button>
+    <button onclick="dayMode()">day mode</button>
+    <button onclick="clearList()">clear list</button>
+    <p>
+    <input type="text" id="box" autocomplete="off" />
+    <button onclick="addItem()">Add</button></p>
+    <p></p>
+    <div id="list"></div>
+  </body>
+</html>
