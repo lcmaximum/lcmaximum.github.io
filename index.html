@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script defer src="script.js"></script>
     <link href="style.css" rel="stylesheet"></link>
-
-    <title>LC.net</title>
+    <title>To-Do List</title>
   </head>
-  <body>
-<h1>Laura "LC" Clark</h1>
-<h2>Let me show u my apps</h2>
-<h3>my apps</h3>
-<h4>let me show u them</h4>    
+  
+  <body id='body'>
+    <div id='view-mode'>Choose your viewing experience  <br />
+    <button id='dark-mode' onclick="darkMode()"></button>
+    <button id='day-mode' onclick="dayMode()"></button>
+    
+    <h1>To-Do List</h1>
 
-<a href="/01-no-stakes-blackjack/index.html">Blackjack 1</a>
-<a href="07-full-game/index">Blackjack 2</a>
-<a href="/02-mvc-ten-to-15">Practice Games</a>
-<p><a href="/todo-list-frontend">Frontend To-Do List</a></p>
-</body>
-    </html>
+    <button onclick="clearList()">clear list</button>
+    <p>
+    <input type="text" id="box" autocomplete="off" />
+    <button onclick="addItem()">Add</button></p>
+    <p></p>
+    <div id="list"></div>
+  </body>
+</html>

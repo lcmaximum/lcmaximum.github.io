@@ -1,8 +1,22 @@
 body {
-    font-family: sans-serif;
-    max-width: 75ch;
-    line-height: 1.75;
-    font-size: 1.25em;
-    margin-left: 15%;
-  }
-  
+  font-family: sans-serif;
+  max-width: 75ch;
+  line-height: 1.75;
+  font-size: 1.25em;
+  margin-left: 15%;
+}
+
+button {
+  min-height: 75px;
+  min-width: 75px;
+}
+
+#dark-mode {
+  background-image: url("/night-man.jpg");
+  background-size: contain;
+}
+
+#day-mode {
+  background-image: url("/day-man.png");
+  background-size: cover;
+}

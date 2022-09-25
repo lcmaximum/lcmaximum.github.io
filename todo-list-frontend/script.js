@@ -38,10 +38,9 @@ function saveList() {
 }
 
 function loadList() {
-
   listDiv.innerHTML = localStorage.storedList;
-  for (let i= 0; i<listDiv.children.length; i++){
-    listDiv.children[i].onclick= toggleComplete;
+  for (let i = 0; i < listDiv.children.length; i++) {
+    listDiv.children[i].onclick = toggleComplete;
   }
 }
 
