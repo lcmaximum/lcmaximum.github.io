@@ -38,10 +38,11 @@ function saveList() {
 }
 
 function loadList() {
-  for (let i=0;i<localStorage.storedList.length;i++) {
-    localStorage.storedList[i].onClick = toggleComplete;
-  }
+
   listDiv.innerHTML = localStorage.storedList;
+  for (let i= 0; i<list.children.length; i++){
+    list.children[i].onclick= toggleComplete;
+  }
 }
 
 if (localStorage.storedList) {
